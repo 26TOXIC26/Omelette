@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sedan:ital@0;1&family=Young+Serif&display=swap');
+
+
+.content
+{
+    /* border-radius: 15px; */
+    background-color: white;
+    display: grid;
+    place-items: center;
+    /* width: 700px; */
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.img-head img
+{
+    width: 100%;
+    /* border-radius: 15px; */
+}
+
+.img-head
+{
+    width: 100%;
+    /* margin-top: 30px; */
+    display: grid;
+    place-items: center;
+}
+
+.title
+{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-size: large;
+    font-family: "Sedan", serif;
+    color: hsl(24, 5%, 18%);
+}
+
+.parag1
+{
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+.preparation
+{
+    width: 100%;
+    font-family: "Outfit", serif;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    color: hsl(24, 5%, 18%);
+}
+
+.preparation h4, .preparation p
+{
+    padding-left: 28px;
+}
+
+.preparation h4
+{
+    color: hsl(291, 100%, 30%);
+}
+
+.preparation p::before
+{
+    content: "\2022";
+    margin-right: 25px;
+    color: hsl(291, 100%, 30%);
+}
+
+.ingredients
+{
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    border-bottom: 0.05px solid black;
+}
+
+.ingredients h2{
+    color: rgb(136, 77, 0);
+    font-family: "Sedan", serif;
+}
+
+.ingredients p
+{
+    color: hsl(24, 5%, 18%);
+}
+
+.ingredients p::before
+{
+    content: "\2022";
+    margin-right: 25px;
+    color: rgb(136, 77, 0);
+}
+
+.instructions
+{
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    border-bottom: 0.05px solid black;
+    counter-reset: paragraph-counter;
+}
+
+.instructions h2{
+    color: rgb(136, 77, 0);
+    font-family: "Sedan", serif;
+}
+
+.instructions p{
+    counter-increment: paragraph-counter;
+    text-indent: 0; /* Reset text indentation */
+    line-height: 1.5; /* Adjust line height as needed */
+    color: hsl(24, 5%, 18%);
+}
+
+.instructions p::before
+{
+    color: rgb(136, 77, 0);
+    content: counter(paragraph-counter) ". ";
+    font-size: large;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.first-word
+{
+    font-weight:600;
+}
+
+.nutrition
+{
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+}
+
+.nutrition h2{
+    color: rgb(136, 77, 0);
+    font-family: "Sedan", serif;
+    margin-bottom: 50px;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid black;
+}
+
+.final-info
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cont-info
+{
+    color: rgb(136, 77, 0);
+    font-weight: 600;
+    /* margin-right: 220px; */
+    padding-right: 40%;
+    width: 30px;
+}
+
+.name-info
+{
+    margin-left: 25px;
+}
